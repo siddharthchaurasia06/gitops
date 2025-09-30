@@ -30,16 +30,16 @@ spec:
 
 ---
 
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   name: hellorondu
-#   labels:
-#     app.kubernetes.io/name: hellorondu
-#     app: myapp
-# spec:
-#   containers:
-#   - name: insta
-#     image: siddharthdoccker/insta-img:v1
-#     ports:
-#       - containerPort: 80
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hellorondu
+  labels:
+    app.kubernetes.io/name: hellorondu
+    app: myapp
+spec:
+  containers:
+  - name: insta
+    image: siddharthdoccker/insta-img:v1
+    ports:
+      - containerPort: 80
